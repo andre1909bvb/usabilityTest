@@ -1,0 +1,16 @@
+=== Test Goal ===
+Log in, add items to the cart, verify items, remove a few, and check the changes
+
+Actions and Expected Results:
+
+1. **Action:** Go to the URL 'https://www.saucedemo.com', enter the valid credentials for 'username' and 'password', and click on the 'login-button'.
+    **Expected Result:** The page URL should be 'https://www.saucedemo.com/inventory.html' indicating a successful login.
+
+2. **Action:** Click on the 'add-to-cart' buttons for the items - sauce-labs-backpack, -bike-light, -fleece-jacket, -bolt-t-shirt, -onesie.
+   **Expected Result:** The text on the 'shopping-cart-link' should show '5' indicating all the 5 items are added to the cart.
+
+3. **Action:** Click on the 'remove' buttons for the items - sauce-labs-backpack, -bolt-t-shirt, -onesie.
+   **Expected Result:** The text on the 'shopping-cart-link' should show '2' indicating 2 items are left in the cart after removing some.
+
+4. **Action:** Click on the 'shopping-cart-link' to go to the cart, click 'checkout', fill in 'firstName', 'lastName' and 'postalCode' fields with valid information, click 'continue', and then click 'finish'.
+    **Expected Result:** The final page URL should be 'https://www.saucedemo.com/checkout-complete.html'. The 'checkout-complete-container' is visible and the texts 'THANK YOU FOR YOUR ORDER' and 'Your order has been dispatched, and will arrive just as fast as the pony can get there!' appear respectively on the 'complete-header' and 'complete-text' fields. This indicates a successful order placement.

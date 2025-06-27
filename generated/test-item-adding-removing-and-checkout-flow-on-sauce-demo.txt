@@ -1,0 +1,32 @@
+=== Test Goal ===
+Test item adding, removing, and checkout flow on Sauce Demo
+
+Test Steps:
+
+1. **Log in**
+   Go to the https://www.saucedemo.com
+   Fill the username with 'standard_user' and password with 'secret_sauce' 
+   Click the login button.
+   Expected Result: URL should be 'https://www.saucedemo.com/inventory.html'
+
+2. **Add items to the cart**
+   Click to add 'sauce-labs-backpack', 'sauce-labs-bike-light', and 'sauce-labs-fleece-jacket' to the cart.
+   Expected Result: The number of added items in the shopping cart link should be 3.
+
+3. **Removing items from the cart**
+   Click the shopping cart link
+   Remove 'sauce-labs-backpack' and 'sauce-labs-bike-light' from the cart.
+   Expected Result: The number of remaining items in the shopping cart link should be 1.
+
+4. **Checking out**
+   Click the checkout button
+   Fill the firstName with 'John', the lastName with 'Doe', and the postalCode with '123456'
+   Click the continue button
+   Expected Result: The URL should be 'https://www.saucedemo.com/checkout-step-two.html'
+   Click the finish button
+   Expected Result: The URL should be 'https://www.saucedemo.com/checkout-complete.html'
+
+5. **Verify checkout successful**
+   Expected Result: The heading should display 'THANK YOU FOR YOUR ORDER' and a message saying 'Your order has been dispatched, and will arrive just as fast as the pony can get there!' should appear. 
+
+All the expected outcomes should match the actual outcomes for the test to pass.

@@ -1,0 +1,30 @@
+=== Test Goal ===
+Testing navigation, authentication, adding and removing items from cart, and checkout process in https://www.saucedemo.com
+
+1. **Go to saucedemo.com**
+- Action: Navigate to the website https://www.saucedemo.com.
+- Expected Result: The URL should be 'https://www.saucedemo.com'.
+
+2. **Log in**
+- Action: Fill the 'username' and 'password' fields, then click the 'login' button.
+- Expected Result: The URL should change to 'https://www.saucedemo.com/inventory.html' after successful login.
+
+3. **Add items to the cart**
+- Action: Click on the 'add to cart' buttons of the 'Sauce Labs Backpack', 'Sauce Labs Bike Light', and 'Sauce Labs Fleece Jacket' products.
+- Expected Result: The 'add to cart' buttons for these products should no longer be visible as the products have been added to the cart.
+
+4. **Remove an item from the cart**
+- Action: Click on the 'remove' button of the 'Sauce Labs Bike Light' product.
+- Expected Result: The 'remove' button for the 'Sauce Labs Bike Light' should no longer be visible as it has been removed from the cart.
+
+5. **Proceed to checkout**
+- Action: Click on the shopping cart icon and then click on the 'checkout' button.
+- Expected Result: The URL should change to 'https://www.saucedemo.com/checkout-step-one.html'.
+
+6. **Filling in contact information**
+- Action: Fill the 'firstName', 'lastName', 'postalCode' fields, then click on the 'continue' button.
+- Expected Result: The URL should change to 'https://www.saucedemo.com/checkout-step-two.html'.
+
+7. **Finalizing order**
+- Action: Click on the 'finish' button.
+- Expected Result: The URL should change to 'https://www.saucedemo.com/checkout-complete.html'. 'Thank You For Your Order' message should be displayed.

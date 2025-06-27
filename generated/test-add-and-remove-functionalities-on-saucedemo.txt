@@ -1,0 +1,17 @@
+=== Test Description ===
+
+The test code runs an automated script to test the functionality of adding and removing products to and from the cart on the saucedemo.com website. Here is what each step of the code does.
+
+1. Navigate to saucedemo.com: Here, the script navigates to the URL, 'https://www.saucedemo.com/', and expects the page URL to match this.
+
+2. Logging in: The script fills in the username and password fields with "standard_user" and "secret_sauce" respectively, then clicks the login button. The script then expects the page URL to change to 'https://www.saucedemo.com/inventory.html', which represents a successful login.
+
+3. Adding multiple items to the cart: The script adds several items to the cart by performing multiple click actions on different product's "add-to-cart" buttons.
+
+4. Verifying added items in the cart: The script navigates to the shopping cart by clicking the shopping cart link, then verifies that six items have been added to the cart.
+
+5. Removing items from the cart: The script removes multiple items from the cart by clicking on different product's "remove" buttons.
+
+6. Verifying removed items from the cart: Finally, the script verifies that the correct items have been removed from the cart by checking that only two items remain in the cart.
+
+The expected results for this test is that there should be 6 items initially in the cart which is then reduced to 2 items after removal of 4 items. If the count is as per the steps defined, the test gets passed successfully, otherwise it fails.
