@@ -39,3 +39,11 @@ It uses OpenAI to create test scripts dynamically, validate selectors, and docum
 
 ```bash
 npm install
+
+## Make sure you create a .env file in the root directory:
+
+OPENAI_API_KEY=your_api_key_here
+
+## Generate tests:
+
+node generate-test.js
